@@ -5,5 +5,6 @@
 import math
 
 numeroReal = float(input('Digite um numero real qualquer: '))
-print(math.floor(numeroReal))
+print('O valor digitado foi {} e a sua posição inteira é {}'.format(numeroReal, math.floor(numeroReal)))
+
 
