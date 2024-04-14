@@ -10,10 +10,17 @@
         milhar: 1
 '''
 
-number = input('Informe um numero inteiro de 0 ate 9999: ')
+number = int(input('Informe um numero inteiro de 0 ate 9999: '))
 
-print('Numero: {}'.format(number))
-print('Unidade: {}'.format(number[3]))
-print('Dezena: {}'.format(number[2]))
-print('Centena: {}'.format(number[1]))
-print('Milhar: {}'.format(number[0]))
+unit = number // 1 % 10
+dozen = number // 10 % 10
+hundred = number // 100 % 10
+thousand = number // 1000 % 10
+
+print('Analisando o numero {}'.format(number))
+print('Unidade: {}'.format(unit))
+print('Dezena: {}'.format(dozen))
+print('Centena: {}'.format(hundred))
+print('Milhar: {}'.format(thousand))
+
+

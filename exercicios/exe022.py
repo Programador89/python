@@ -7,7 +7,7 @@
             - Quantas letras tem o primeiro nome
 '''
 
-name = input('Informe seu nome completo: ')
+name = str(input('Informe seu nome completo: ')).strip()
 
 nameUpper = name.upper()
 nameLower = name.lower()
@@ -17,8 +17,7 @@ espacoBranco = name.split(' ')
 print('Todas as letras maiusculas {}'.format(nameUpper))
 print('Todas as letras minusculas {}'.format(nameLower))
 
-print(nameCurto)
-print(len(nameCurto[0:]))
+print('Seu nome tem ao todo {} letras'.format(len(name) - name.count(' ')))
 
 print(espacoBranco)
 print('O primeiro nome tem {} letras'.format(len(espacoBranco[0])))
