@@ -6,9 +6,11 @@
     - O programa devera escrever na tela se o usuario venceu ou perdeu.
 '''
 from random import randint
+from time import sleep
 
 number_choise = int(input('Qual numero inteiro entre 0 e 5 eu pensei. Podes adivinhar humano? '))
-
+print('PROCESSANDO...')
+sleep(2)
 number_random = randint(0,5)
 
 if number_choise == number_random:
